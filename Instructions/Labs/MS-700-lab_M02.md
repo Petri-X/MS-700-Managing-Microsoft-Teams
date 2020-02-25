@@ -231,9 +231,13 @@ As part of your Teams planning project, you will configure the naming policy whe
 
 5. Download a blocked words sample file. Save the file and then open the file in **Notepad**.
 
-6. Type **CEO,Payroll,HR** into the Notepad window and save the file in place. Afterwards, close the Notepad file.
+6. Type
+**CEO
+Payroll
+HR**
+into the Notepad window and save the file in place. Afterwards, close the Notepad file.
 
-7. Back to the **Groups - Naming policy** page, upload the **BlockedWords.csv** file you just created.
+7. Back to the **Groups - Naming policy** page, upload the **BlockedWords.txt** file you just created.
 
 8. On the **Groups - Naming policy** page, configure group name prefix to be **“Group**“ string, and group name suffix to be **“CountryOrRegion** attribute.
 
