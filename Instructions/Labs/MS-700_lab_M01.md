@@ -171,7 +171,7 @@ Before you can connect to Teams from your tenant and perform any actions, you ne
  
 1. Open an elevated PowerShell (Admin) window.
 
-2. Change the current execution policy with cmdlet: ```Set-ExecutionPolicy Unrestricted```
+2. Change the current execution policy with cmdlet: ```Set-ExecutionPolicy RemoteSigned```
 
 3. Install the mainstream Teams PowerShell module: ```Install-Module -Name MicrosoftTeams```
 
