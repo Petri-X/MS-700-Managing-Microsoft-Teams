@@ -81,13 +81,19 @@ You need to evaluate governance of Office 365 Groups before deploying them in yo
 	$Setting["ClassificationDescriptions"] = "Standard: General communication, Internal: Company internal data, Confidential: Data that has regulatory requirements"
 	```
 
-11. To verify the classifications and calssificationdescriptions values, run the following cmdlet:
+11. Assiciate the correct classification which should be the default, by running the following cmdlet:
+
+	```powershell
+	$Setting["DefaultClassification"] = "Internal"
+	``` 
+
+12. To verify the classifications and calssificationdescriptions values, run the following cmdlet:
 
 	```powershell
 	$Setting.Values
 	```
 
-12. As soon as the “Setting” variable attributes contain the desired values, write back the settings object to your directory. Use the following cmdlet, to create a new “Group.Unified” Azure AD configuration with the custom settings:
+13. As soon as the “Setting” variable attributes contain the desired values, write back the settings object to your directory. Use the following cmdlet, to create a new “Group.Unified” Azure AD configuration with the custom settings:
 
 	```powershell
 	New-AzureADDirectorySetting -DirectorySetting $Setting
